@@ -1,4 +1,4 @@
-package com.inrhythm.controller;
+package main.java.com.inrhythm.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"controller", "model", "service"})
+@ComponentScan(basePackages = {"main.java.com"})
 public class Application extends SpringBootServletInitializer {
 
     @Override

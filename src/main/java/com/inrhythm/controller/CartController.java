@@ -1,25 +1,19 @@
-package  com.inrhythm.controller;
+package  main.java.com.inrhythm.controller;
 
 import java.io.File;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.inrhythm.model.Cart;
-import com.inrhythm.model.Product;
-import com.inrhythm.service.CartService;
-import com.inrhythm.service.MockDataService;
+import main.java.com.inrhythm.model.Cart;
+import main.java.com.inrhythm.service.CartService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Validated

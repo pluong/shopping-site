@@ -1,4 +1,4 @@
-package  com.inrhythm.model;
+package  main.java.com.inrhythm.model;
 
 import java.util.Map;
 

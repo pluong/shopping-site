@@ -1,4 +1,4 @@
-package  com.inrhythm.service;
+package  main.java.com.inrhythm.service;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.inrhythm.model.Cart;
+import main.java.com.inrhythm.model.Cart;
 
 @Service("cartService")
 public class CartService {
