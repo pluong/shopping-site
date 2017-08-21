@@ -10,7 +10,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import model.Cart;
+import com.inrhythm.model.Cart;
 
 @Service("cartService")
 public class CartService {
