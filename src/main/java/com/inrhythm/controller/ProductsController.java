@@ -1,12 +1,8 @@
-package controller;
+package  com.inrhythm.controller;
 
-import java.io.File;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-import javax.servlet.ServletContext;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,27 +12,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Cart;
 import model.Greeting;
 import model.Product;
-import service.CartService;
 import service.MockDataService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Validated
 @RestController
-public class CartController {
-	
-	@Autowired
-	ServletContext servletContext;
-	
-	@Autowired
-	CartService cartService;
-
-    @RequestMapping(method = RequestMethod.GET, value = "/cart")
-    public @ResponseBody Cart greeting() {
-        return cartService.getUserCart("pluong85@gmail.com", servletContext.getRealPath("/WEB-INF") + File.separator + "user-carts.txt");
+public class ProductsController {
+    
+    @RequestMapping("/products")
+    public @ResponseBody List<Product> getAllProducts() {
+        return MockDataService.getProductList();
     }
     
-    
+    @RequestMapping("/products/{sku}")
+    public @ResponseBody Product getProduct(@PathVariable Long sku) {
+        return MockDataService.getProduct(sku);
+    }
 }

@@ -1,4 +1,4 @@
-package service;
+package  com.inrhythm.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
