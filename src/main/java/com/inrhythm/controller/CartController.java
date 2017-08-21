@@ -16,11 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Cart;
-import model.Greeting;
-import model.Product;
-import service.CartService;
-import service.MockDataService;
+import com.inrhythm.model.Cart;
+import com.inrhythm.model.Product;
+import com.inrhythm.service.CartService;
+import com.inrhythm.service.MockDataService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Validated
