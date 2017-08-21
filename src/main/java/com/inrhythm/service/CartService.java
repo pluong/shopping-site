@@ -1,4 +1,4 @@
-package service;
+package  com.inrhythm.service;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

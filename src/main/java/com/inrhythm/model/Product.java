@@ -1,4 +1,4 @@
-package model;
+package  com.inrhythm.model;
 
 public class Product {
 
